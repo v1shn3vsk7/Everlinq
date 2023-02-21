@@ -1,0 +1,13 @@
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+.idea
+.DS_Store
+.wt
+.turtle
+.lock
+.bson

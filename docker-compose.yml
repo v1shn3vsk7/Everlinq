@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  web:
+    image: app
+    environment:
+      - DB_URL=mongodb://mongo:27017
+    build: .
+    ports:
+      - "8888:8888"
+
+  mongo:
+    image: mongo:latest
+    restart: always
+    volumes:
+      - ./data:/data/db
